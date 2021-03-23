@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E3E81891-71B8-4DA4-A6DA-513BD63116DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KTANE_Helper</RootNamespace>
+    <AssemblyName>KTANE Helper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ComplexWires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComplexWires.Designer.cs">
+      <DependentUpon>ComplexWires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Keypad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Keypad.Designer.cs">
+      <DependentUpon>Keypad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Maze.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Maze.Designer.cs">
+      <DependentUpon>Maze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Memory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Memory.Designer.cs">
+      <DependentUpon>Memory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MorseCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MorseCode.Designer.cs">
+      <DependentUpon>MorseCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Password.Designer.cs">
+      <DependentUpon>Password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Simon Says.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simon Says.Designer.cs">
+      <DependentUpon>Simon Says.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The Button.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The Button.Designer.cs">
+      <DependentUpon>The Button.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Simple Wires.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Simple Wires.Designer.cs">
+      <DependentUpon>Simple Wires.cs</DependentUpon>
+    </Compile>
+    <Compile Include="The Knob.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="The Knob.Designer.cs">
+      <DependentUpon>The Knob.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Who%27s On First.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Who%27s On First.Designer.cs">
+      <DependentUpon>Who%27s On First.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WireSequence.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WireSequence.Designer.cs">
+      <DependentUpon>WireSequence.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ComplexWires.resx">
+      <DependentUpon>ComplexWires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Keypad.resx">
+      <DependentUpon>Keypad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Maze.resx">
+      <DependentUpon>Maze.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Memory.resx">
+      <DependentUpon>Memory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MorseCode.resx">
+      <DependentUpon>MorseCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Password.resx">
+      <DependentUpon>Password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Simon Says.resx">
+      <DependentUpon>Simon Says.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The Button.resx">
+      <DependentUpon>The Button.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Simple Wires.resx">
+      <DependentUpon>Simple Wires.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="The Knob.resx">
+      <DependentUpon>The Knob.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Who%27s On First.resx">
+      <DependentUpon>Who%27s On First.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WireSequence.resx">
+      <DependentUpon>WireSequence.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blank Maze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circle Point.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\End Position.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start Position.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Right.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Complex Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keypad Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Knob Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maze Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Memory Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Morse Code Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Password Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siman Says Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Simple Wires Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Who%27s On First Thumb 300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wire Sequence Thumb 300x300.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
